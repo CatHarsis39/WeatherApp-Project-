@@ -56,7 +56,8 @@ function showTemperatureInHtml(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#weather").innerHTML = response.data.weather[0].main;
+  document.querySelector("#weather").innerHTML =
+    response.data.weather[0].description;
   document.querySelector("#temp-min").innerHTML = Math.round(
     response.data.main.temp_min
   );
