@@ -81,3 +81,13 @@ ul {
 .bubble div {
   text-align: center;
 }
+.open-source {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1320px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
