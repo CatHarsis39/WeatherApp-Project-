@@ -57,6 +57,12 @@ function showTemperatureInHtml(response) {
     response.data.wind.speed
   );
   document.querySelector("#weather").innerHTML = response.data.weather[0].main;
+  document.querySelector("#temp-min").innerHTML = Math.round(
+    response.data.main.temp_min
+  );
+  document.querySelector("#temp-max").innerHTML = Math.round(
+    response.data.main.temp_max
+  );
 }
 
 function getApiInfo(city) {
