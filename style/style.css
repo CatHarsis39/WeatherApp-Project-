@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to bottom, #80bab1, #ffffff 100%);
+  background: #80bab1;
   margin: 5px 50px;
   padding: 0px 250px;
 }
@@ -11,7 +11,7 @@ body {
   width: 100%;
   border-style: solid;
   border-color: #ffffff;
-  border-radius: 20px;
+
   max-width: 1140px;
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
@@ -30,29 +30,33 @@ body {
 
 #current-location-button {
   background-color: rgba(224, 187, 135, 0.85);
-  border-radius: 10px;
+
   box-shadow: 5px 5px 10px rgba(156, 115, 115, 0.2);
 }
 #search {
   background-color: rgba(224, 187, 135, 0.85);
-  border-radius: 10px;
+
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #city-input {
-  border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-h1,
-h3 {
-  font-weight: bold;
+h1 {
   color: black;
+  font-size: 30px;
 }
 
 h2 {
   font-weight: 300;
   color: black;
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 ul {

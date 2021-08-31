@@ -48,7 +48,7 @@ formatDate();
 // Weather Info main
 
 function showTemperatureInHtml(response) {
-  document.querySelector("h2").innerHTML = response.data.name;
+  document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#temp-num").innerHTML = Math.round(
     response.data.main.temp
   );
