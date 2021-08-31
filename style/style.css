@@ -107,13 +107,11 @@ hr {
   padding: 80px 0;
   margin: 10px, 20px;
   max-width: 100%;
-  background-image: #65afdf;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(98, 109, 114, 0.8);
 }
 
 .bubble div {
   text-align: center;
-  background-image: #65afdf;
 }
 
 .highest-temp {
