@@ -18,90 +18,14 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-h1,
-h3 {
-  font-weight: bold;
-  color: black;
-}
-
-h2 {
-  font-weight: 300;
-  color: black;
-}
-
-footer {
-  display: block;
-  margin: 30px;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
-}
-
-ul {
-  display: block;
-  list-style: none;
-  color: black;
-}
-
-.searched-city-info {
-  text-align: center;
-  margin: 100px;
-}
-
-.bubble {
-  padding: 80px 0;
-  margin: 10px, 20px;
-  max-width: 100%;
-  background-image: #80bab1;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.bubble div {
-  text-align: center;
-}
-
 .top-bar {
   text-align: center;
   margin: 20px;
 }
 
-.highest-temp {
-  font-weight: bolder;
-}
-
-.next-days {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.extra-info {
-  font-weight: light;
-  font-style: oblique;
-  color: black;
-}
-
 .searched-city-info {
   text-align: center;
   margin: 100px;
-}
-
-.open-source {
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 1320px;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  font-weight: bold;
 }
 
 #current-location-button {
@@ -118,4 +42,75 @@ ul {
 #city-input {
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h3 {
+  font-weight: bold;
+  color: black;
+}
+
+h2 {
+  font-weight: 300;
+  color: black;
+}
+
+ul {
+  display: block;
+  list-style: none;
+  color: black;
+}
+
+.extra-info {
+  font-weight: light;
+  font-style: oblique;
+  color: black;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.next-days {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.bubble {
+  padding: 80px 0;
+  margin: 10px, 20px;
+  max-width: 100%;
+  background-image: #80bab1;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bubble div {
+  text-align: center;
+}
+
+.highest-temp {
+  font-weight: bolder;
+}
+
+footer {
+  display: block;
+  margin: 30px;
+}
+
+.open-source {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1320px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: bold;
 }
