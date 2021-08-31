@@ -1,21 +1,32 @@
 body {
-  background: #80bab1;
+  font-family: "Poppins", sans-serif;
   margin: 5px 50px;
   padding: 0px 250px;
+  color: white;
 }
 
 .container {
+}
+
+.weather-app {
   display: block;
+  background-image: linear-gradient(
+    to bottom,
+    #56a7dc,
+    #5dacdd,
+    #64b0df,
+    #6bb5e0,
+    #72b9e1
+  );
   margin: 30px auto;
   padding: 7px 50px;
   width: 100%;
   border-style: solid;
   border-color: #ffffff;
-
   max-width: 1140px;
-  font-family: "Poppins", sans-serif;
   background-color: #ffffff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .top-bar {
@@ -44,13 +55,13 @@ body {
 }
 
 h1 {
-  color: black;
+  color: white;
   font-size: 30px;
 }
 
 h2 {
   font-weight: 300;
-  color: black;
+  color: white;
   font-size: 80px;
 }
 
@@ -62,13 +73,13 @@ h3 {
 ul {
   display: block;
   list-style: none;
-  color: black;
+  color: white;
 }
 
 .extra-info {
   font-weight: light;
   font-style: oblique;
-  color: black;
+  color: white;
 }
 
 hr {
@@ -76,9 +87,9 @@ hr {
   height: 1px;
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
   );
 }
 
@@ -91,12 +102,13 @@ hr {
   padding: 80px 0;
   margin: 10px, 20px;
   max-width: 100%;
-  background-image: #80bab1;
+  background-image: #65afdf;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .bubble div {
   text-align: center;
+  background-image: #65afdf;
 }
 
 .highest-temp {
@@ -106,6 +118,7 @@ hr {
 footer {
   display: block;
   margin: 30px;
+  background-image: #65afdf;
 }
 
 .open-source {
