@@ -80,6 +80,14 @@ h3 {
   color: #ffffff;
 }
 
+#temp-celsius {
+  font-size: 20px;
+}
+
+#temp-far {
+  font-size: 20px;
+}
+
 ul {
   display: block;
   list-style: none;
