@@ -119,6 +119,8 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+// Temperature conversion feature
+
 let celsiusTemperature = null; // global variable to allow switch unit
 
 function showFahrenheit(event) {
@@ -140,4 +142,6 @@ function displayCelsius(event) {
 let tempCelsius = document.querySelector("#temp-celsius");
 tempCelsius.addEventListener("click", displayCelsius);
 
-getApiInfo("New York"); // default city when page is loading
+// Default city when page is loading
+
+getApiInfo("New York");
