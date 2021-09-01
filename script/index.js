@@ -33,6 +33,13 @@ function formatDate() {
   let currentYear = currentTime.getFullYear();
   let currentHour = currentTime.getHours();
   let currentMinutes = currentTime.getMinutes();
+  if (currentMinutes < 10) {
+    currentMinutes = `0${currentMinutes}`;
+  }
+
+  if (currentHour < 10) {
+    currentHour = `0${currentHour}`;
+  }
 
   let sentenceDate = `Today | ${dayIndex} ${currentDate}, ${currentMonth} ${currentYear}`;
 
