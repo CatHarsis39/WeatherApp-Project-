@@ -64,6 +64,9 @@ function showTemperatureInHtml(response) {
   document.querySelector("#temp-max").innerHTML = Math.round(
     response.data.main.temp_max
   );
+  document.querySelector("#real").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
 }
 
 function getApiInfo(city) {
@@ -99,3 +102,5 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+function background() {}

@@ -75,6 +75,10 @@ h3 {
   color: white;
 }
 
+.real {
+  color: #ffffff;
+}
+
 ul {
   display: block;
   list-style: none;
