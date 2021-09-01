@@ -28,12 +28,14 @@ body {
 .top-bar {
   text-align: center;
   margin: 20px;
+  font-weight: 300;
 }
 
 .searched-city-info {
   text-align: center;
   margin: 100px;
   color: #626d72;
+  font-weight: 300;
 }
 
 #current-location-button {
@@ -42,6 +44,7 @@ body {
   box-shadow: 5px 5px 10px rgba(156, 115, 115, 0.2);
   border-radius: 10px;
   color: #626d72;
+  font-weight: 300;
 }
 
 #search {
@@ -50,6 +53,7 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   color: #626d72;
+  font-weight: 300;
 }
 
 #city-input {
@@ -107,10 +111,14 @@ ul {
 }
 
 .extra-info {
-  font-weight: light;
+  font-weight: 300;
   font-style: oblique;
   color: white;
   border-left: solid white;
+}
+
+.dates-displayed {
+  font-weight: 300;
 }
 
 hr {
@@ -127,9 +135,15 @@ hr {
 .next-days {
   display: block;
   margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.highest-temp {
+  font-weight: bolder;
 }
 
 .bubble {
+  font-weight: 300;
   padding: 80px -1;
   margin: 10px, 20px;
   max-width: 100%;
@@ -139,10 +153,6 @@ hr {
 
 .bubble div {
   text-align: center;
-}
-
-.highest-temp {
-  font-weight: bolder;
 }
 
 footer {
