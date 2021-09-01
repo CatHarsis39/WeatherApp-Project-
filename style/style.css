@@ -80,12 +80,13 @@ h3 {
   color: #ffffff;
 }
 
-#temp-celsius {
-  font-size: 20px;
-}
-
+#temp-celsius,
 #temp-far {
   font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: italic;
 }
 
 ul {

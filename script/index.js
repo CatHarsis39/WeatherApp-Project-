@@ -83,6 +83,8 @@ function showTemperatureInHtml(response) {
   );
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 function getApiInfo(city) {
@@ -101,8 +103,6 @@ function handleSubmit(event) {
 let searchedCity = document.querySelector("#city-form");
 searchedCity.addEventListener("submit", handleSubmit);
 
-getApiInfo("New York"); // default city when page is loading
-
 // geolocation
 
 function searchLocation(position) {
@@ -118,3 +118,26 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+let celsiusTemperature = null; // global variable to allow switch unit
+
+function showFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp-num");
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let tempfar = document.querySelector("#temp-far");
+tempfar.addEventListener("click", showFahrenheit);
+
+function displayCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp-num");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let tempCelsius = document.querySelector("#temp-celsius");
+tempCelsius.addEventListener("click", displayCelsius);
+
+getApiInfo("New York"); // default city when page is loading
