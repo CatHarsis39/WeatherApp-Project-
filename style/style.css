@@ -136,3 +136,9 @@ footer {
   color: black;
   font-weight: bold;
 }
+
+img {
+  float: left;
+  height: 57px;
+  width: 57px;
+}
