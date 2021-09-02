@@ -52,7 +52,59 @@ function formatDate() {
 
 formatDate();
 
-// Weather Info main
+// Format date for forecast
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
+// forecast
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
+
+  let forecastElement = document.querySelector("#bubblesForecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
+      <div class="col-2">
+            <div class="bubble">
+              <div id="days-name">${formatDay(forecastDay.dt)}</div>
+              <div id="exact-date">31</div>
+              <div id="weather-image"><img
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
+          alt=""
+          width="40"
+        /></div>
+              <div id="highest-temp">${Math.round(forecastDay.temp.max)}ºC</div>
+              <div id="lowest-temp">${Math.round(forecastDay.temp.min)}ºC</div>
+            </div>
+          </div>
+  `;
+    }
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+// Weather Info
+
+function getForecast(coordinates) {
+  let key = "9da2f08caa2513afeb23e54674daaf04";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${key}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function showTemperatureInHtml(response) {
   document.querySelector("h1").innerHTML = response.data.name;
@@ -85,6 +137,8 @@ function showTemperatureInHtml(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   celsiusTemperature = response.data.main.temp;
+
+  getForecast(response.data.coord);
 }
 
 function getApiInfo(city) {
@@ -102,34 +156,6 @@ function handleSubmit(event) {
 
 let searchedCity = document.querySelector("#city-form");
 searchedCity.addEventListener("submit", handleSubmit);
-
-// forecast
-
-function displayForecast() {
-  let forecastElement = document.querySelector("#bubblesForecast");
-
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
-
-  let forecastHTML = `<div class="row">`;
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
-      <div class="col-2">
-            <div class="bubble">
-              <div class="days-name">${day}</div>
-              <div class="exact-date">31</div>
-              <div class="weather-image">☁️</div>
-              <div class="highest-temp">14ºC</div>
-              <div class="lowest-temp">10ºC</div>
-            </div>
-          </div>
-  `;
-  });
-
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
-}
 
 // geolocation
 
@@ -172,6 +198,4 @@ tempCelsius.addEventListener("click", displayCelsius);
 
 // Default city when page is loading
 
-getApiInfo("New York");
-
-displayForecast();
+getApiInfo("Seoul");
