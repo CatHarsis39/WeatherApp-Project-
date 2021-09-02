@@ -25,12 +25,13 @@ body {
   text-align: center;
   margin: 20px;
   font-weight: 300;
+  color: #324b4e;
 }
 
 .searched-city-info {
   text-align: center;
   margin: 100px;
-  color: ##894b62;
+  color: #324b4e;
   font-weight: 300;
 }
 
@@ -39,7 +40,7 @@ body {
 
   box-shadow: 5px 5px 10px rgba(156, 115, 115, 0.2);
   border-radius: 10px;
-  color: #894b62;
+  color: #324b4e;
   font-weight: 300;
 }
 
@@ -48,14 +49,14 @@ body {
 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  color: #894b62;
+  color: #324b4e;
   font-weight: 300;
 }
 
 #city-input {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  color: #894b62;
+  color: #324b4e;
 }
 
 h1 {
