@@ -67,6 +67,18 @@ h1 {
   font-size: 30px;
 }
 
+.celsius {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.feel-celsius {
+  font-size: 12px;
+}
+
 h2 {
   font-weight: 300;
   color: white;
@@ -82,26 +94,6 @@ h3 {
 
 .real {
   color: #ffffff;
-}
-
-#temp-celsius {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-style: italic;
-}
-#temp-far {
-  font-size: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-style: italic;
-  text-decoration: underline;
-}
-
-h2 .active {
-  text-decoration: none;
 }
 
 ul {
