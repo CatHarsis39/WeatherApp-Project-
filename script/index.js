@@ -174,4 +174,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 // Default city when page is loading
 
-getApiInfo("Seoul");
+getApiInfo("guadalajara");
