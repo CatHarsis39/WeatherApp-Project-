@@ -103,6 +103,34 @@ function handleSubmit(event) {
 let searchedCity = document.querySelector("#city-form");
 searchedCity.addEventListener("submit", handleSubmit);
 
+// forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#bubblesForecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+            <div class="bubble">
+              <div class="days-name">${day}</div>
+              <div class="exact-date">31</div>
+              <div class="weather-image">☁️</div>
+              <div class="highest-temp">14ºC</div>
+              <div class="lowest-temp">10ºC</div>
+            </div>
+          </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 // geolocation
 
 function searchLocation(position) {
@@ -145,3 +173,5 @@ tempCelsius.addEventListener("click", displayCelsius);
 // Default city when page is loading
 
 getApiInfo("New York");
+
+displayForecast();
