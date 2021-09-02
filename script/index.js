@@ -172,29 +172,6 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-// Temperature conversion feature
-
-let celsiusTemperature = null; // global variable to allow switch unit
-
-function showFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temp-num");
-  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
-let tempfar = document.querySelector("#temp-far");
-tempfar.addEventListener("click", showFahrenheit);
-
-function displayCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temp-num");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let tempCelsius = document.querySelector("#temp-celsius");
-tempCelsius.addEventListener("click", displayCelsius);
-
 // Default city when page is loading
 
 getApiInfo("Seoul");
