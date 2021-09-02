@@ -78,7 +78,6 @@ function displayForecast(response) {
       <div class="col-2">
             <div class="bubble">
               <div id="days-name">${formatDay(forecastDay.dt)}</div>
-              <div id="exact-date">31</div>
               <div id="weather-image"><img
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
