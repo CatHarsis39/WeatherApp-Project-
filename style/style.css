@@ -110,7 +110,7 @@ ul {
 
 .dates-displayed {
   font-weight: 300;
-  color: #93705b;
+  color: #faf8ff;
   font-weight: 500;
 }
 
@@ -124,7 +124,11 @@ hr {
   display: block;
   margin-bottom: 20px;
   font-weight: 600;
-  color: #93705b;
+  color: white;
+  border: thin;
+  background-color: #9ec7cd;
+  box-shadow: 5px 5px 10px rgba(98, 109, 114, 0.9);
+  max-width: 13%;
 }
 
 #highest-temp {
