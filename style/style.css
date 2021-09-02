@@ -7,14 +7,10 @@ body {
 
 .container {
   display: block;
-  background-image: linear-gradient(
-    to bottom,
-    #56a7dc,
-    #5dacdd,
-    #64b0df,
-    #6bb5e0,
-    #72b9e1
-  );
+
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/487/original/background.jpg?1630589920");
+  background-repeat: no-repeat;
+  background-size: 1897px;
   margin: 30px auto;
   padding: 45px 50px;
   width: 100%;
