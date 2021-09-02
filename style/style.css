@@ -60,13 +60,13 @@ body {
 
 h1 {
   display: block;
-  color: #894b62;
+  color: white;
   font-size: 30px;
 }
 
 .celsius {
   font-size: 30px;
-  color: #894b62;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   font-style: italic;
@@ -79,7 +79,7 @@ h1 {
 h2 {
   display: block;
   font-weight: 300;
-  color: #894b62;
+  color: white;
   font-size: 80px;
 }
 
@@ -87,25 +87,25 @@ h3 {
   display: block;
   font-size: 20px;
   font-weight: 300;
-  color: #894b62;
+  color: white;
   text-transform: capitalize;
 }
 
 .real {
-  color: #894b62;
+  color: white;
 }
 
 ul {
   display: block;
   list-style: none;
-  color: #894b62;
+  color: white;
 }
 
 .extra-info {
   font-weight: 300;
   font-style: oblique;
-  color: #894b62;
-  border-left: solid #894b62;
+  color: white;
+  border-left: solid white;
 }
 
 .dates-displayed {
@@ -128,7 +128,7 @@ hr {
 .next-days {
   display: block;
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 #highest-temp {
