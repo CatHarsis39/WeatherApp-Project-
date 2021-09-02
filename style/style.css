@@ -63,8 +63,10 @@ body {
 }
 
 h1 {
+  display: block;
   color: white;
   font-size: 30px;
+  margin: 0;
 }
 
 .celsius {
@@ -80,16 +82,20 @@ h1 {
 }
 
 h2 {
+  display: block;
   font-weight: 300;
   color: white;
   font-size: 80px;
+  margin: 0;
 }
 
 h3 {
+  display: block;
   font-size: 20px;
   font-weight: 300;
   color: white;
   text-transform: capitalize;
+  margin: 0;
 }
 
 .real {
