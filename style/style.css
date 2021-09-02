@@ -122,13 +122,18 @@ hr {
 
 .next-days {
   display: block;
-  margin-bottom: 20px;
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 6px;
   font-weight: 600;
   color: white;
   border: thin;
   background-color: #9ec7cd;
   box-shadow: 5px 5px 10px rgba(98, 109, 114, 0.9);
-  max-width: 13%;
+  max-width: 14%;
 }
 
 #highest-temp {
