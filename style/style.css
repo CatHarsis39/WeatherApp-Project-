@@ -134,7 +134,7 @@ hr {
 
 .bubble {
   font-weight: 300;
-  background-color: #699197;
+  background-color: #9ec7cd;
   padding: 80px -1;
   margin: 10px, 20px;
   max-width: 100%;
@@ -148,7 +148,6 @@ hr {
 footer {
   display: block;
   margin: 30px;
-  background-image: #65afdf;
 }
 
 .open-source {
