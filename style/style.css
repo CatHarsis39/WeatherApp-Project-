@@ -2,7 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 5px 50px;
   padding: 0px 250px;
-  color: white;
+  color: #894b62;
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
 .searched-city-info {
   text-align: center;
   margin: 100px;
-  color: #626d72;
+  color: ##894b62;
   font-weight: 300;
 }
 
@@ -39,7 +39,7 @@ body {
 
   box-shadow: 5px 5px 10px rgba(156, 115, 115, 0.2);
   border-radius: 10px;
-  color: #626d72;
+  color: #894b62;
   font-weight: 300;
 }
 
@@ -48,25 +48,25 @@ body {
 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  color: #626d72;
+  color: #894b62;
   font-weight: 300;
 }
 
 #city-input {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  color: #626d72;
+  color: #894b62;
 }
 
 h1 {
   display: block;
-  color: white;
+  color: #894b62;
   font-size: 30px;
 }
 
 .celsius {
   font-size: 30px;
-  color: white;
+  color: #894b62;
   text-decoration: none;
   font-weight: 500;
   font-style: italic;
@@ -79,7 +79,7 @@ h1 {
 h2 {
   display: block;
   font-weight: 300;
-  color: white;
+  color: #894b62;
   font-size: 80px;
 }
 
@@ -87,25 +87,25 @@ h3 {
   display: block;
   font-size: 20px;
   font-weight: 300;
-  color: white;
+  color: #894b62;
   text-transform: capitalize;
 }
 
 .real {
-  color: #ffffff;
+  color: #894b62;
 }
 
 ul {
   display: block;
   list-style: none;
-  color: white;
+  color: #894b62;
 }
 
 .extra-info {
   font-weight: 300;
   font-style: oblique;
-  color: white;
-  border-left: solid white;
+  color: #894b62;
+  border-left: solid #894b62;
 }
 
 .dates-displayed {
@@ -116,10 +116,12 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.75),
-    rgba(255, 255, 255, 0)
+    to right top,
+    #894b62,
+    #894b62,
+    #894b62,
+    #894b62,
+    #894b62
   );
 }
 
