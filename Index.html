@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,88 +17,83 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    
-<link rel="stylesheet" href="style/style.css" />
+
+    <link rel="stylesheet" href="style/style.css" />
     <title>Weather app</title>
   </head>
   <body>
-
-   
     <div class="container" id="contain">
       <!--start of container -->
 
       <!-- Top bar -->
       <div class="top-bar">
-         <form id="city-form">
-          <input type="city" id="city-input" placeholder="Enter your city">
-          <input type="submit" value="Search" id="search">
-          <button id = "current-location-button">Current Location</button>
+        <form id="city-form">
+          <input type="city" id="city-input" placeholder="Enter your city" />
+          <input type="submit" value="Search" id="search" />
+          <button id="current-location-button">Current Location</button>
         </form>
       </div>
 
       <main class="searched-city-info">
         <!--Middle part -->
-         <div class="row align-items-center">
+        <div class="row align-items-center">
           <div class="col-6">
             <div class="main-info-city">
               <h1>city</h1>
-              <h2> <img
-                class ="img"
-                  src=""
-                  id="icon"
-                  alt="weather-image"
-                  />
-                  <span id= temp-num>temp</span><span class="celsius">ºC</span></h2>
+              <h2>
+                <img class="img" src="#" id="icon" alt="weather-image" />
+                <span id="temp-num">temp</span><span class="celsius">ºC</span>
+              </h2>
 
-                  
-              <h3 id= "weather">
-              </h3>
-              <div class="real"> Real feel: <span id ="real">25</span><span class="feel-celsius">ºC</span></div>
+              <h3 id="weather"></h3>
+              <div class="real">
+                Real feel: <span id="real">25</span
+                ><span class="feel-celsius">ºC</span>
+              </div>
             </div>
           </div>
 
-        <div class="col-6 ">
+          <div class="col-6">
             <div class="extra-info">
-                <div class ="hum"> Humidity: <span id= "humidity"></span>%</div>
-                <div class="win"> Wind: <span id ="wind"> </span> km/h</div>
-                 <div class="min"> Low: <span id ="temp-min"> </span><span class="feel-celsius">ºC</span></div>
-                  <div class="max"> High: <span id ="temp-max"> </span><span class="feel-celsius">ºC</span></div>  
+              <div class="hum">Humidity: <span id="humidity"></span>%</div>
+              <div class="win">Wind: <span id="wind"> </span> km/h</div>
+              <div class="min">
+                Low: <span id="temp-min"> </span
+                ><span class="feel-celsius">ºC</span>
+              </div>
+              <div class="max">
+                High: <span id="temp-max"> </span
+                ><span class="feel-celsius">ºC</span>
+              </div>
             </div>
           </div>
-        </div></p>
+        </div>
       </main>
 
-      <div class = dates-displayed>
-        
-      <p id="today-date">date</p>
-      <p id="last-update">time</p>
-
+      <div class="dates-displayed">
+        <p id="today-date">date</p>
+        <p id="last-update">time</p>
       </div>
 
       <hr />
 
-      
       <div class="next-days">Next 6 days</div>
 
       <div id="bubblesForecast">
-
-      <!-- Next 5 day part -->
-      <footer>
-
-       
-       
-      </footer>
-
-      
+        <!-- Next 5 day part -->
+        <footer></footer>
       </div>
+    </div>
+    <!--end of container -->
 
-      </div>
-      <!--end of container -->
-
-     <a href="https://github.com/CatHarsis39/WeatherApp-Project-.git"
-      alt= "Github"
+    <a
+      href="https://github.com/CatHarsis39/WeatherApp-Project-.git"
+      alt="Github"
       target="_blank"
-      class= "open-source"> Open-source code by Sandrine Pecout</a>
+      class="open-source"
+    >
+      Open-source code by Sandrine Pecout</a
+    >
 
     <script src="script/index.js"></script>
   </body>
