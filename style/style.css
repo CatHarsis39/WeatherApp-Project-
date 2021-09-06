@@ -54,11 +54,16 @@ h1 {
 }
 
 .celsius {
+  display: inline;
   font-size: 30px;
   color: white;
   text-decoration: none;
   font-weight: 500;
   font-style: italic;
+}
+
+#temp-num {
+  display: inline;
 }
 
 .feel-celsius {
