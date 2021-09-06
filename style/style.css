@@ -64,6 +64,7 @@ h1 {
 
 #temp-num {
   display: inline;
+  margin: -25px;
 }
 
 .feel-celsius {
